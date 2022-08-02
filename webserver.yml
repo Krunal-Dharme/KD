@@ -5,14 +5,10 @@
   - name: I want to install webserver on node side.
     apt:
       name:  apache2
-      state: present
-    when: ansible_os_family=="debian" 
+      state: present 
 
   - name: I want to start the webserver.
     service:
       name:  apache2
       state: started
-<<<<<<< HEAD
-    when: ansible_os_family=="Redhat"
-=======
->>>>>>> 783478db10c0021bf7e48e7c92a3ec10ff3004d6
+
