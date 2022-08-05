@@ -9,4 +9,4 @@
   -  name: I want to install java on top of d next ubuntu node.
      apt:
        name: "{{myjavawebpackonubuntu}}" 
-       service: started
+       service: present
