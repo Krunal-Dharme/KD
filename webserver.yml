@@ -8,9 +8,9 @@
       name:  "{{mywebpackonubuntu}}"
       state: present 
     when: ansible_os_family=="Debian"
-  - name: I want to start the webserver
-    service:
+  - name: I want to install  webserver on Redhat
+    yum:
       name:  "{{mywebpackonredhat}}"
-      state: started
+      state: present
     when: ansible_os_family=="Redhat"  
 
