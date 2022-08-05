@@ -7,10 +7,10 @@
     apt:
       name:  "{{mywebpackonubuntu}}"
       state: present 
-  - when: ansible_os_family=="Debian"
-  - name: I want to start the webserver.
+    when: ansible_os_family=="Debian"
+  - name: I want to start the webserver
     service:
       name:  "{{mywebpackonredhat}}"
       state: started
-  - when: ansible_os_family=="Redhat"  
+    when: ansible_os_family=="Redhat"  
 
