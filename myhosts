@@ -1,2 +1,3 @@
-[172.31.27.6]
-[172.31.19.87]
+[mywebservers:vars]
+mywebpackonubuntu= apache2
+mywebpackonredhat= httpd
