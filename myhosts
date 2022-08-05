@@ -1,7 +1,7 @@
 [mywebservers]
-[172.31.27.6]
-[172.31.19.87]
-[10.15.16.17]
+172.31.27.6
+172.31.19.87
+10.15.16.17
 
 [mywebservers:vars]
 myvariable= value
