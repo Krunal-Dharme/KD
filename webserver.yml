@@ -4,9 +4,9 @@
   gather_facts: yes
   tasks: 
   - name: I want to install webserver on node side.
-    apt:
+    service:
       name:  "{{mywebpackonubuntu}}"
-      state: present 
+      state: started
     when: ansible_os_family=="Debian"
   - name: I want to install  webserver on Redhat
     yum:
