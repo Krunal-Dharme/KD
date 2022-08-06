@@ -10,3 +10,7 @@
      apt:
        name: "{{myjavawebpackonubuntu}}" 
        state: present
+  -  name: I want to install nginx on 172.31.42.252.
+     apt:
+       name:  "{{myapppackonubuntu}}"
+       state: present     
