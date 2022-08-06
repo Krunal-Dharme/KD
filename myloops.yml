@@ -1,12 +1,11 @@
 ---
 - hosts: 172.31.27.6
-  become:  yes
-  gather_facts: yes
+  become: yes
   tasks: 
     name: Executing using loops.
     apt: 
       name: "{{item}}" 
-      service: present
+      state: present
     loops:
       - tree
       - wget  
