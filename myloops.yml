@@ -1,5 +1,5 @@
 ---
-  hosts: 172.31.27.6
+- hosts: 172.31.27.6
   become:  yes
   gather_facts: yes
   tasks: 
