@@ -4,9 +4,9 @@
   tasks:
   -  name: I want to install java on ubuntu node.
      apt:
-      name:  "{{myjavawebpackonubuntu}}"
-      service: present
-  -  name: I want to install java on top of d next ubuntu node.
+       name:  "{{mywebpackonubuntu}}"
+       state: present
+  -  name: I want to install java on top of the next ubuntu node.
      apt:
        name: "{{myjavawebpackonubuntu}}" 
-       service: present
+       state: present
