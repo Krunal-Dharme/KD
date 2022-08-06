@@ -1,11 +1,13 @@
 ---
 - hosts: 172.31.27.6
   become: yes
-  tasks: 
-    name: Executing using loops.
-    apt: 
-      name: "{{item}}" 
+  tasks:
+  - name: i want execute mult package
+    apt:
+      name: "{{ item }}"
       state: present
-    loops:
+    loop:
+      - git
       - tree
-      - wget  
+      - wget 
+    tags: mymultipack
